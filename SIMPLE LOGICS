@@ -1,0 +1,180 @@
+1)Write a program to check if a given number is
+Positive, Negative, or Zero.
+ 
+PROGRAM
+import java.util.Scanner;
+ 
+class Num {  // Class name should start with an uppercase letter
+   public static void main(String[] args) {
+       int number;
+       Scanner scanner = new Scanner(System.in);  
+ 
+       System.out.println("Enter the value of number: ");
+       number = scanner.nextInt();  
+ 
+       if (number > 0) {
+           System.out.println("The given number is positive");
+       } else if (number < 0) {
+           System.out.println("The given number is negative");
+       } else {
+           System.out.println("The given number is zero");
+       }
+ 
+       scanner.close();  // Closing scanner after usage
+   }
+}
+ 
+OUTPUT
+ 
+Enter the value of number:
+-3
+The given number is negative
+ 
+Enter the value of number:
+0
+The given number is zero
+ 
+ 
+ 
+ 
+2)Write a program to check if a given number is odd or
+even.
+ 
+ 
+import java.util.scanner;
+class Num{
+public static void main(String[]args){
+int number;
+Scanner scanner = new Scanner(System.in);
+System.out.println("Enter the value of number: ");
+number= scanner.nextInt();
+if (number%2){
+system.out.println("the given number is odd");
+}
+ 
+ 
+else{
+system.out.println("the given number is even");
+}
+scanner.close();
+}
+}
+ 
+ 
+ 
+ 
+output
+ 
+Enter the value of number:
+7
+The given number is odd
+ 
+3)
+Write a program to check if the program has received
+command line arguments or not. If the program has not
+received the values then print "No Values", else print
+all the values in a single line separated by ,(comma).
+Eg1) java Example
+O/P: No values
+Eg2) java Example Mumbai Bangalore
+O/P: Mumbai,Bangalore
+[Note: You can use length property of an array to
+check its length
+ 
+Program
+ 
+class Cha {
+   public static void main(String[] args) {
+       if (args.length == 0) {
+           System.out.println("No Values");
+       } else {
+                      System.out.println(String.join(",", args));
+       }
+   }
+}
+ 
+Output
+java Example
+ 
+No Values
+ 
+java Example Mumbai Bangalore
+ 
+Mumbai,Bangalore
+ 
+ 
+ 
+ 
+4)
+Initialize two character variables in a program and
+display the characters in alphabetical order.
+Eg1) if first character is s and second is e
+O/P: e,s
+Eg2) if first character is a and second is e
+O/P:a,e
+ 
+import java.util.Scanner;
+ 
+class AlphabeticalOrder {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);
+ 
+ 
+       System.out.print("Enter first character: ");
+       char char1 = scanner.next().charAt(0);
+ 
+       System.out.print("Enter second character: ");
+       char char2 = scanner.next().charAt(0);
+ 
+ 
+       if (char1 < char2) {
+           System.out.println(char1 + "," + char2);
+       } else {
+           System.out.println(char2 + "," + char1);
+       }
+ 
+       scanner.close(); // Close the scanner to prevent resource leaks
+   }
+}
+ 
+Output:
+
+ 
+Enter first character: s
+Enter second character: e
+ 
+e,s
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+5) Intialize a character variable in a program and if
+the value is alphabet then print "Alphabet" if it’s a
+number then print "Digit"
+ 
+import java.util.Scanner;
+ 
+class Num {
+   public static void main(String[] args) {
+       Scanner scanner = new Scanner(System.in);  
+ 
+       System.out.print("Enter any value: ");
+       char input = scanner.next().charAt(0);  
+ 
+       if (Character.isLetter(input)) {
+           System.out.println("The given input is an alphabet");
+       } else if (Character.isDigit(input)) {
+           System.out.println("The given input is a diggit");
+       } else {
+           System.out.println("The given input is a special character");
+       }
+ 
+       scanner.close();
+   }
+}
+ 
+ 
